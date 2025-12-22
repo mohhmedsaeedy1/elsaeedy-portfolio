@@ -78,7 +78,10 @@
 					}				
 				});
 			});
-		};				
+		};
+
+		// Removed About Section Scroll Animation
+
 	return false;
 		// End of use strict
 });

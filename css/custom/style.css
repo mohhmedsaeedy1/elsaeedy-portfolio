@@ -5057,3 +5057,403 @@ html {
 }
 
 /*======================================= UNIVERSAL THEME IMPROVEMENTS END ===============================================================*/
+
+/*======================================= ABOUT SECTION PROFESSIONAL DESIGN START ========================================================*/
+
+/* Animated Heading */
+.animated-heading {
+    position: relative;
+    display: inline-block;
+    /* Removed animation */
+}
+
+.animated-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), #ff4757);
+    border-radius: 2px;
+    /* Removed animation */
+}
+
+/* About Image Wrapper with Hover Effect */
+.about-image-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px var(--shadow-color);
+    /* Removed transition and transform on hover */
+}
+
+.about-image-wrapper:hover {
+    /* Disabled hover animation */
+}
+
+.about-image-wrapper img {
+    border-radius: 15px;
+    /* Removed transition */
+}
+
+.about-image-wrapper:hover img {
+    /* Disabled scale animation */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(238, 22, 59, 0.9), rgba(255, 71, 87, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* Removed transition */
+    border-radius: 15px;
+}
+
+.about-image-wrapper:hover .image-overlay {
+    /* Disabled overlay animation */
+    opacity: 0;
+}
+
+.overlay-content {
+    text-align: center;
+    color: #fff;
+    /* Removed transform and transition */
+}
+
+.about-image-wrapper:hover .overlay-content {
+    /* Disabled content animation */
+}
+
+.overlay-content i {
+    margin-bottom: 15px;
+    /* Removed animation: pulse */
+}
+
+.overlay-content p {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* About Cards */
+.about-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    /* Removed transition */
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.about-card::before {
+    /* Disabled animated line effect */
+    display: none;
+}
+
+.about-card:hover::before {
+    /* Disabled */
+}
+
+.about-card:hover {
+    /* Disabled all hover animations */
+}
+
+.card-icon {
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), #ff4757);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(238, 22, 59, 0.4);
+    /* Removed animation: float */
+}
+
+.card-icon i {
+    color: #fff;
+    font-size: 28px;
+}
+
+.card-content h3 {
+    color: var(--text-primary);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-content h3 i {
+    color: var(--accent-color);
+    font-size: 24px;
+    /* Removed animation: bounceIn */
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    background: var(--hover-bg);
+    border-left: 3px solid var(--accent-color);
+    border-radius: 8px;
+    /* Removed transition */
+}
+
+.skill-item:hover {
+    /* Disabled hover animation */
+}
+
+.skill-item i {
+    color: var(--accent-color);
+    font-size: 20px;
+    min-width: 25px;
+}
+
+.skill-item span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.skill-item strong {
+    color: var(--accent-color);
+}
+
+/* What I Do List */
+.what-i-do-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.what-i-do-list li {
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    background: var(--hover-bg);
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    /* Removed transition */
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.what-i-do-list li:hover {
+    /* Disabled hover animation */
+}
+
+.what-i-do-list li i {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-top: 3px;
+    min-width: 20px;
+}
+
+/* Buttons */
+.btn-download,
+.btn-contact {
+    padding: 12px 35px !important;
+    margin: 10px !important;
+    border-radius: 30px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    /* Removed transition */
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-download {
+    background: var(--accent-color) !important;
+    border: 2px solid var(--accent-color) !important;
+    color: #fff !important;
+}
+
+.btn-download:hover {
+    /* Disabled hover animation */
+    background: var(--accent-color) !important;
+    color: #fff !important;
+}
+
+.btn-contact {
+    background: transparent !important;
+    border: 2px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.btn-contact:hover {
+    /* Disabled hover animation */
+    background: transparent !important;
+    color: var(--accent-color) !important;
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fadeInLeft,
+.fadeInRight {
+    opacity: 1; /* Changed from 0 to 1 - no fade effect */
+    /* Removed animation-fill-mode */
+}
+
+.fadeInLeft {
+    /* Removed animation */
+}
+
+.fadeInRight {
+    /* Removed animation */
+}
+
+/* Disabled keyframes - animations won't run */
+/*
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-card {
+        padding: 20px;
+    }
+    
+    .card-icon {
+        width: 50px;
+        height: 50px;
+        top: -10px;
+        right: 15px;
+    }
+    
+    .card-icon i {
+        font-size: 22px;
+    }
+    
+    .card-content h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .skill-item,
+    .what-i-do-list li {
+        font-size: 13px;
+    }
+    
+    .about-div-img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-download,
+    .btn-contact {
+        display: block;
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+}
+
+/*======================================= ABOUT SECTION PROFESSIONAL DESIGN END ==========================================================*/

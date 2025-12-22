@@ -187,50 +187,99 @@
 		<!--=================================  ABOUT ME START ==========================================-->
 		<section class="section-padding about-section section-1-bg" id="about">
 			<div class="container">
-				<div class="row about-row">
-					<div class="about-div-img col-sm-6">
-						<img src="images/540x400.jpg" alt="540x400" class="img-responsive">
+				<div class="heading-div">
+					<div class="section-title section-heading">
+						<h2 class="animated-heading">About Me</h2>
 					</div>
-					<div class="about-div col-sm-6">
-						<h2>About Me</h2>
-						<p>
-							?? Professional Summary
-							 <br>
-							I am Mohamed El-Saeedy, a passionate and versatile Full-Stack Developer with strong expertise in designing, developing, and deploying end-to-end software solutions. With a solid foundation in both low-level programming (C, C++) and modern web technologies, I bring a unique blend of performance-driven coding and scalable web application development.
-						</p>
-						<p>
-							????? Technical Skills
-							 <br>
+				</div>
+				
+				<div class="row about-row">
+					<div class="about-div-img col-sm-5 fadeInLeft" data-animation="fadeInLeft">
+						<div class="about-image-wrapper">
+							<img src="images/540x400.jpg" alt="Mohamed Elsaeedy" class="img-responsive">
+							<div class="image-overlay">
+								<div class="overlay-content">
+									<i class="fa fa-code fa-3x"></i>
+									<p>Full-Stack Developer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="about-div col-sm-7">
+						<!-- Professional Summary Card -->
+						<div class="about-card fadeInRight" data-animation="fadeInRight" data-delay="0.2s">
+							<div class="card-icon">
+								<i class="fa fa-user-circle"></i>
+							</div>
+							<div class="card-content">
+								<h3><i class="fa fa-briefcase"></i> Professional Summary</h3>
+								<p>I am Mohamed El-Saeedy, a passionate and versatile Full-Stack Developer with strong expertise in designing, developing, and deploying end-to-end software solutions. With a solid foundation in both low-level programming (C, C++) and modern web technologies, I bring a unique blend of performance-driven coding and scalable web application development.</p>
+							</div>
+						</div>
 
-Programming Languages: C, C++, JavaScript, PHP
+						<!-- Technical Skills Card -->
+						<div class="about-card fadeInRight" data-animation="fadeInRight" data-delay="0.4s">
+							<div class="card-icon">
+								<i class="fa fa-code"></i>
+							</div>
+							<div class="card-content">
+								<h3><i class="fa fa-cogs"></i> Technical Skills</h3>
+								<div class="skills-grid">
+									<div class="skill-item">
+										<i class="fa fa-terminal"></i>
+										<span><strong>Programming:</strong> C, C++, JavaScript, PHP</span>
+									</div>
+									<div class="skill-item">
+										<i class="fa fa-laptop"></i>
+										<span><strong>Front-End:</strong> HTML5, CSS3, Bootstrap, React.js</span>
+									</div>
+									<div class="skill-item">
+										<i class="fa fa-server"></i>
+										<span><strong>Back-End:</strong> Node.js, .NET</span>
+									</div>
+									<div class="skill-item">
+										<i class="fa fa-database"></i>
+										<span><strong>Databases:</strong> MySQL, Oracle</span>
+									</div>
+									<div class="skill-item">
+										<i class="fa fa-puzzle-piece"></i>
+										<span><strong>Other:</strong> RESTful API, System Integration, Performance Optimization</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-Front-End Development: HTML5, CSS3, Bootstrap, React.js
+						<!-- What I Do Card -->
+						<div class="about-card fadeInRight" data-animation="fadeInRight" data-delay="0.6s">
+							<div class="card-icon">
+								<i class="fa fa-rocket"></i>
+							</div>
+							<div class="card-content">
+								<h3><i class="fa fa-magic"></i> What I Do</h3>
+								<ul class="what-i-do-list">
+									<li><i class="fa fa-check-circle"></i> Build responsive and user-friendly web applications that balance functionality and design</li>
+									<li><i class="fa fa-check-circle"></i> Develop robust backend systems with secure APIs, seamless integrations, and optimized database structures</li>
+									<li><i class="fa fa-check-circle"></i> Provide end-to-end solutions for businesses, covering analysis, architecture, development, and deployment</li>
+									<li><i class="fa fa-check-circle"></i> Leverage diverse technical knowledge to solve complex challenges in different domains including consulting, finance, and enterprise systems</li>
+								</ul>
+							</div>
+						</div>
 
-Back-End Development: Node.js, .NET
+						<!-- Vision Card -->
+						<div class="about-card fadeInRight" data-animation="fadeInRight" data-delay="0.8s">
+							<div class="card-icon">
+								<i class="fa fa-eye"></i>
+							</div>
+							<div class="card-content">
+								<h3><i class="fa fa-lightbulb-o"></i> Vision</h3>
+								<p>My mission is to deliver innovative, reliable, and efficient software solutions that empower organizations to achieve digital transformation and sustainable growth. I strive to bridge the gap between business goals and technology with clean, scalable code and a user-centric mindset.</p>
+							</div>
+						</div>
 
-Databases: MySQL, Oracle
-
-Other Expertise: RESTful API design, system integration, performance optimization, and enterprise-level application development.
-						</p>
-						<p>?? What I Do
-							 <br>
-
-Build responsive and user-friendly web applications that balance functionality and design.
-
-Develop robust backend systems with secure APIs, seamless integrations, and optimized database structures.
-
-Provide end-to-end solutions for businesses, covering analysis, architecture, development, and deployment.
-
-Leverage diverse technical knowledge to solve complex challenges in different domains including consulting, finance, and enterprise systems.
-						</p>
-						<br>
-						<p>	
-?? Vision
- <br>
-
-My mission is to deliver innovative, reliable, and efficient software solutions that empower organizations to achieve digital transformation and sustainable growth. I strive to bridge the gap between business goals and technology with clean, scalable code and a user-centric mindset.</p>
-						<div class="top-space">													
-							<input type="submit" id="printerButton" class="btn btn-txt" value="Print Resume">							
+						<div class="top-space text-center">													
+							<input type="submit" id="printerButton" class="btn btn-txt btn-download" value="Print Resume">
+							<a href="#contact" class="btn btn-txt btn-contact">Get In Touch</a>
 							<iframe id="loaderFrame" name="loaderFrame"></iframe>					
 						</div>
 					</div>
@@ -663,7 +712,7 @@ My mission is to deliver innovative, reliable, and efficient software solutions 
 		<div class="video-section-1 section-2-bg">					
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" 
-            src="https://www.youtube.com/embed/nu_pCVPKzTk?version=3&loop=1&playlist=nu_pCVPKzTk" 
+            src="https://www.youtube.com/embed/XgSm6N6zpJU?version=3&loop=1&playlist=XgSm6N6zpJU&mute=1&autoplay=1" 
             allowfullscreen>
     </iframe>
   </div>	
