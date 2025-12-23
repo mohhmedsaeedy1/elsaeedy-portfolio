@@ -1,0 +1,57 @@
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ee163b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="400" height="120" fill="url(#bg-gradient)" rx="10" ry="10"/>
+  
+  <!-- Border -->
+  <rect width="396" height="116" x="2" y="2" fill="none" stroke="#ee163b" stroke-width="1" rx="8" ry="8" opacity="0.6"/>
+  
+  <!-- Main text: Mohamed Elsaeedy -->
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        text-anchor="middle" fill="url(#text-gradient)" filter="url(#glow)">
+    MOHAMED ELSAEEDY
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="75" font-family="Arial, sans-serif" font-size="14" 
+        text-anchor="middle" fill="#cccccc" opacity="0.9">
+    Full Stack Developer & Software Engineer
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="60" r="3" fill="#ee163b" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="350" cy="60" r="3" fill="#ee163b" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Decorative lines -->
+  <line x1="70" y1="60" x2="140" y2="60" stroke="#ee163b" stroke-width="2" opacity="0.6"/>
+  <line x1="260" y1="60" x2="330" y2="60" stroke="#ee163b" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Bottom accent line -->
+  <line x1="100" y1="95" x2="300" y2="95" stroke="#ee163b" stroke-width="1" opacity="0.8"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with light gradient -->
+  <defs>
+    <linearGradient id="light-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="light-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d3436;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ee163b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3436;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="light-shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="200" height="60" fill="url(#light-bg)" rx="8" ry="8" filter="url(#light-shadow)"/>
+  
+  <!-- Border -->
+  <rect width="196" height="56" x="2" y="2" fill="none" stroke="rgba(238, 22, 59, 0.2)" stroke-width="1" rx="6" ry="6"/>
+  
+  <!-- Main text: M. ELSAEEDY -->
+  <text x="100" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="bold" 
+        text-anchor="middle" fill="url(#light-text)">
+    M. ELSAEEDY
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="44" font-family="Arial, sans-serif" font-size="10" 
+        text-anchor="middle" fill="#636e72">
+    Full Stack Developer
+  </text>
+  
+  <!-- Decorative dots -->
+  <circle cx="25" cy="30" r="2" fill="#ee163b" opacity="0.6"/>
+  <circle cx="175" cy="30" r="2" fill="#ee163b" opacity="0.6"/>
+</svg>
